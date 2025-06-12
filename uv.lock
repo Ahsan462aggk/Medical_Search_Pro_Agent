@@ -661,7 +661,7 @@ wheels = [
 ]
 
 [[package]]
-name = "medical-search-pro"
+name = "medical-search-pro-agent"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

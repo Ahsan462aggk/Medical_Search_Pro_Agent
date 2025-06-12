@@ -20,12 +20,11 @@ If email is present in the output of {evidence_matrix_package}:
 Step 2: Check for Synthesis and CSV:
 If “synthesis” or “csv” from {evidence_matrix_package} is missing or empty,
  Do NOT call any external tools.
-Always Return Output only this exactly
-Please enter your medical topic or question so the Medical Search Pro Agent can assist you.
-and stop.
+Always Return Output only this exactly:
+"Please enter your medical topic or question so the Medical Search Pro Agent can assist you."
 
- Step 3: Collect Recipient Email
-- Before any other action, use the collect_email_tool to request the recipient's email address from the user.
+Step 3: Collect Recipient Email
+- Before any other action if the sythesis or csv is present in the output of {evidence_matrix_package}, use the collect_email_tool to request the recipient's email address from the user.
 - Do NOT proceed to any further steps until a valid recipient email is provided by the user.
 - Continue prompting the user for the email address until it is received.
 Step 4: Send Literature Package
