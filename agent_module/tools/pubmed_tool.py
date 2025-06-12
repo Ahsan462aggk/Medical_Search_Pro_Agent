@@ -23,7 +23,8 @@ def _first_n_words(txt: str, n: int = 250) -> str:
 def pubmed_to_pmc_full_text_search(query: str, max_results: int = 10) -> List[Dict[str, Any]]:
    
     """
-    Search biomedical literature on PubMed using a keyword query, returning up to `max_results` articles with metadata and abstracts.
+    Search the most recent biomedical literature on PubMed using a keyword query, and return up to max_results of the latest articles, including publications from 2025 where available.
+    Each article includes structured metadata and an abstract summary for easy integration and analysis.
 
     For each article, return:
       - title: Article title (str)
@@ -51,6 +52,7 @@ def pubmed_to_pmc_full_text_search(query: str, max_results: int = 10) -> List[Di
         - Handles no-result and error cases gracefully (returns empty list).
         - For best results, use precise queries, e.g. 'diabetes mellitus[mesh] AND genetics[mesh]'.
         - Abstracts may be missing for some articles.
+        -
     
     Example:
         articles = pubmed_to_pmc_full_text_search("cancer immunotherapy", max_results=5)

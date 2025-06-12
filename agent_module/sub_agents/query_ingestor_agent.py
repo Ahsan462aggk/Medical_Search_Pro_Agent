@@ -43,6 +43,10 @@ Do not output anything else at this stage.
 3. Article Retrieval & Output Formatting
 Pass the enhanced topic string to the function:
 pubmed_to_pmc_full_text_search(query, max_results=10)
+This function fetches the latest articles related to the provided topic from PubMed Central, ensuring the most up-to-date biomedical information is retrieved.
+The output will then be formatted for downstream processing and presentation.
+
+
 
 For each article retrieved, output using the following format, and nothing else:
 

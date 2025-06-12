@@ -165,7 +165,7 @@ def send_email(
     """
        1. synthesis: 
     2. csv: The evidence matrix/metrics as a CSV string
-    3. fetched_articles: A list of article dictionaries{state['fetched_articles']}
+    3. fetched_articles: A list of article dictionaries
     4. recipient_email: The email address of the recipient from the collect_email_tool
     
     Your job:
