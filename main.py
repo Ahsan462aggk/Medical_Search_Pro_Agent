@@ -1,5 +1,5 @@
 """Main entry point for the agent module."""
-from agent_module.agent import root_agent as agent
+from medical_agent_bot.agent import root_agent as agent
 
 # Make the agent available at the top level
 root_agent = agent
